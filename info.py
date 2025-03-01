@@ -40,7 +40,7 @@ FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "")
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CUSTOM_FILE_CAPTION}")
 
 # MongoDB information
-DATABASE_URI = nviron.get('DATABASE_URI', "mongodb+srv://pcmovies:pcmovies@cluster0.4vv9ebl.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://pcmovies:pcmovies@cluster0.4vv9ebl.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "pcmovies")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
